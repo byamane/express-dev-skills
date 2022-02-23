@@ -1,16 +1,12 @@
 import { Router } from 'express'
-import * as devskillsDb from '../data/devskills-db.js'
+import * as devskillsCtrl from '../controllers/devskills.js'
 const router = Router()
 
 /* GET users listing. */
-router.get('/', function(req, res) {
-  devskillsDb.find({}, function(error, devskills) {
-    res.render('devskills/index', {
-      devskills: devskills,
-      error: error
-    })
-  })
-})
+// GET - localhost:3000/todos
+router.get('/', devskillsCtrl.index)
+// GET - localhost:3000/todos/:id
+router.get("/:id", devskillsCtrl.show)
 
 export {
   router

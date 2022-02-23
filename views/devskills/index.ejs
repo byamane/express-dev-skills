@@ -14,11 +14,12 @@
   <ul>
     <% devskills.forEach(function(skill) { %>
       <li>
-        <%= skill.text %>
+        <a href="/devskills/<%= skill._id %>"><%= skill.text %></a> 
           - 
-        <%= skill.done ? 'done' : 'not done' %>
+        <%= skill.done ? 'yup' : 'nope' %>
       </li>
     <% }) %>
   </ul>
+  <a href="/">Home</a>
 </body>
 </html>
