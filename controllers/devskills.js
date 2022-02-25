@@ -19,7 +19,12 @@ function show(req, res) {
   })
 }
 
+function newSkill(req, res) {
+  res.render('devskills/new')
+}
+
 export {
   index,
-  show
+  show,
+  newSkill as new,
 }

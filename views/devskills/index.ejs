@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <title>My Skills</title>
 </head>
 <body>
-  <h1>My Dev Skills as of <%= date %></h1>
+  <h1>&#129299; My Dev Skills as of <%= date %> &#129299; </h1>
   <% if(error) { %>
     <h2><%= error %></h2>
   <% } %>
@@ -16,10 +17,11 @@
       <li>
         <a href="/devskills/<%= skill._id %>"><%= skill.text %></a> 
           - 
-        <%= skill.done ? 'yup' : 'in progress' %>
+        <%= skill.done ? 'yup! 🎊' : 'in progress' %>
       </li>
     <% }) %>
   </ul>
+  <a href="/devskills/new">Add Skill</a>
   <a href="/">Home</a>
 </body>
 </html>
