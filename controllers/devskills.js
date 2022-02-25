@@ -4,7 +4,8 @@ function index(req, res) {
   devskillsDb.find({}, function(error, devskills) {
     res.render('devskills/index', {
       devskills: devskills,
-      error: error
+      error: error,
+      date: req.date,
     })
   })
 }

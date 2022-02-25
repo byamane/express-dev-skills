@@ -1,9 +1,12 @@
 const devSkills = [
-  {text: 'JavaScript', done: true, _id: 125223},
-  {text: 'HTML', done: true, _id: 127904},
-  {text: 'CSS', done: true, _id: 139608},
+  {text: 'HTML', done: true, _id: 125223},
+  {text: 'CSS', done: true, _id: 127904},
+  {text: 'JavaScript', done: true, _id: 139608},
   {text: 'Node.js', done: false, _id: 212121},
-  {text: 'Python', done: false, _id: 300000}
+  {text: 'Express.js', done: false, _id: 220000},
+  {text: 'MongoDB', done: false, _id: 230000},
+  {text: 'Python', done: false, _id: 240000},
+  {text: 'Django', done: false, _id: 300000},
 ]
 
 const find = (conditions, callback) => {
