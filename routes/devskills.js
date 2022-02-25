@@ -10,6 +10,9 @@ router.get('/new', devskillsCtrl.new)
 // GET - localhost:3000/devskills/:id
 router.get("/:id", devskillsCtrl.show)
 
+// POST - localhost:3000/devskills
+router.post('/', devskillsCtrl.create)
+
 export {
   router
 }

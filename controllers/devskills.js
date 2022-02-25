@@ -23,8 +23,15 @@ function newSkill(req, res) {
   res.render('devskills/new')
 }
 
+function create(req, res) {
+  devskillsDb.create(req.body, function(error, skill) {
+    res.redirect('/devskills')
+  })
+}
+
 export {
   index,
   show,
   newSkill as new,
+  create,
 }
