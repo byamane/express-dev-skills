@@ -13,6 +13,9 @@ router.get("/:id", devskillsCtrl.show)
 // POST - localhost:3000/devskills
 router.post('/', devskillsCtrl.create)
 
+// DELETE - localhost:3000/devskills
+router.delete('/:id', devskillsCtrl.delete)
+
 export {
   router
 }
